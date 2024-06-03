@@ -1,11 +1,11 @@
 import React from 'react';
 import {  ThemeProvider } from '@material-ui/core';
-import theme from "./theme/theme";
-import Header from './Component/Header/indax'
+import createMuiTheme from "./theme/theme";
+import JobListing from './Component/Header/indax.js'
 
 const App = () => (
-  <ThemeProvider theme={theme}>
-    <Header/>
+  <ThemeProvider theme={createMuiTheme}>
+    <JobListing />
   </ThemeProvider>
 );
 export default App;
